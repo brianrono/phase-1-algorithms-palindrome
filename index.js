@@ -26,6 +26,10 @@ If we get through the whole loop without finding a mismatch, we know it's a pali
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("abba"));
+
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
@@ -33,6 +37,9 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("ab"));
 }
 
 module.exports = isPalindrome;
